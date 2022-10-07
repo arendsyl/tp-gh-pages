@@ -30,8 +30,6 @@ jobs:
 
     - name: Deploy
       if: success()
-      uses: peaceghiris/actions-gh-pages@v3
+      uses:  actions/upload-pages-artifact@v1.0.4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/demo-gh-pages
-        enable_jekyll: true
+        path: dist/demo-gh-pages
