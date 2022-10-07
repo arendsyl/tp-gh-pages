@@ -28,21 +28,8 @@ jobs:
     - name: Build
       run: npm run build
       
-    - name: Archive artifact
-      shell: bash
-      if: runner.os == 'Linux'
-      run: |
-        tar \
-          --dereference --hard-dereference \
-          --directory "$INPUT_PATH" \
-          -cvf "$RUNNER_TEMP/artifact.tar" \
-          --exclude=.git \
-          --exclude=.github \
-          .
-      env:
-        INPUT_PATH: dist/demo-gh-pages
-        
-    - name: Deploy GitHub Pages site
-      uses: actions/deploy-pages@v1.2.1
+    - name: Deploy
+      if: success()
+      uses:  actions/upload-pages-artifact@v1.0.4
       with:
-        artifact_name: demo-gh-pages
+        path: dist/tp-gh-pages
