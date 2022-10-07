@@ -32,4 +32,4 @@ jobs:
       if: success()
       uses:  actions/upload-pages-artifact@v1.0.4
       with:
-        path: dist/demo-gh-pages
+        path: dist/tp-gh-pages
