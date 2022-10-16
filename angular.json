@@ -101,7 +101,7 @@
             "baseHref": "/tp-gh-pages/",
             "name": "arendsyl",
             "email": "kaiserjean@eisti.eu",
-            "repo": "git@github.com:arendsyl/tp-gh-pages.git"
+            "repo": "https://github.com/arendsyl/tp-gh-pages.git"
           }
         }
       }
