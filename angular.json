@@ -96,7 +96,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+	  "options": {
+	  	"baseHref": "/tp-gh-pages/",
+		"repo": "https://github.com/arendsyl/tp-gh-pages.git",
+		"name": "Jean-Baptiste Kaiser",
+		"email": "kaiserjean@eisti.eu"
+	  }
         }
       }
     }
