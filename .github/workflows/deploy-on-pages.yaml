@@ -35,6 +35,4 @@ jobs:
       
     - name: Deploy
       if: success()
-      uses:  actions/upload-pages-artifact@v1.0.4
-      with:
-        path: ./dist/demo-gh-pages
+      run: ./node_modules/.bin/ng deploy 
