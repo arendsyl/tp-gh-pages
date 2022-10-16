@@ -99,7 +99,6 @@
           "builder": "angular-cli-ghpages:deploy",
 	  "options": {
 	  	"baseHref": "/tp-gh-pages/",
-		"repo": "https://github.com/arendsyl/tp-gh-pages.git",
 		"name": "arendsyl",
 		"email": "kaiserjean@eisti.eu"
 	  }
