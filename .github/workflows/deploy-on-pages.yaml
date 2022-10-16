@@ -35,4 +35,4 @@ jobs:
       
     - name: Deploy
       if: success()
-      run: ./node_modules/.bin/ng deploy 
+      run: ./node_modules/.bin/ng deploy --base-href=/tp-gh-pages/
