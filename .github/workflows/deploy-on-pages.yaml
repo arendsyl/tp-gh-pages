@@ -35,4 +35,4 @@ jobs:
       
     - name: Deploy
       if: success()
-      run: ./node_modules/.bin/ng deploy --base-href=/tp-gh-pages/
+      run: ./node_modules/.bin/ng deploy --base-href=/tp-gh-pages/ --repo=https://github.com/arendsyl/tp-gh-pages.git
