@@ -9,11 +9,6 @@ on:
 
 jobs:
   deploy:
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-  
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -35,4 +30,4 @@ jobs:
       
     - name: Deploy
       if: success()
-      run: ./node_modules/.bin/ng deploy --base-href=/tp-gh-pages/ --repo=https://github.com/arendsyl/tp-gh-pages.git
+      run: ./node_modules/.bin/ng deploy --base-href=/tp-gh-pages/ --repo=https://github.com/arendsyl/tp-gh-pages.git --no-silent
